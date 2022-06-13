@@ -11,14 +11,16 @@ import { ListarPostsComponent } from './listar-posts/listar-posts.component';
 import { NuevoPostsComponent } from './nuevo-posts/nuevo-posts.component';
 import { environment } from 'src/environments/environment';
 import { PostState } from './store/posts/posts.state';
-import { ZooComponentComponent } from './zoo-component/zoo-component.component';
+import { NuevoUsuarioComponent } from './nuevo-usuario/nuevo-usuario.component';
+import { ListarUsuariosComponent } from './listar-usuarios/listar-usuarios.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListarPostsComponent,
     NuevoPostsComponent,
-    ZooComponentComponent
+    NuevoUsuarioComponent,
+    ListarUsuariosComponent,
   ],
   imports: [
     BrowserModule,

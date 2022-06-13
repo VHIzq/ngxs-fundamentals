@@ -15,5 +15,9 @@ export interface User {
   hasExperience: boolean;
 }
 
+export class UserStateModel {
+  users: User[] = [];
+}
+
 
 

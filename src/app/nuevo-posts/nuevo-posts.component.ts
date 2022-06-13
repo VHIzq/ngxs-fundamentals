@@ -17,8 +17,6 @@ export class NuevoPostsComponent  {
   public addPost() {
 
     this.store.dispatch( new AddPost({ id: uuidv4(), text: this.text}));
-    this.text = ''
+    //this.text = ''
   }
-
-
 }

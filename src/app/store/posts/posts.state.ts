@@ -1,6 +1,7 @@
 import { Action, Selector, State, StateContext } from "@ngxs/store";
 import { PostStateModel } from "./posts.model";
 import { AddPost, RemovePost } from './posts.actions';
+import { Injectable } from "@angular/core";
 
 @State({
   name: 'posts',
@@ -8,7 +9,6 @@ import { AddPost, RemovePost } from './posts.actions';
     posts: []
   }
 })
-
 
 export class PostState {
 
@@ -34,4 +34,5 @@ export class PostState {
       posts: getState().posts.filter(post => post.id !== payload)
     });
   }
+
 }

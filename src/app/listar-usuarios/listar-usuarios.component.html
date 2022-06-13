@@ -1,0 +1,13 @@
+<ul>
+  <li *ngFor="let user of users | async">
+    <p>
+     {{ user.id }}
+     {{ user.name }}
+     {{ user.payment }}
+     {{ user.hasExperience }}
+    </p>
+    <a (click)="removeUser(user.id)" >Eliminar</a>
+  </li>
+</ul>
+
+<div *ngIf="users"></div>
